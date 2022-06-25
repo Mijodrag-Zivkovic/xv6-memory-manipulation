@@ -1,3 +1,12 @@
+Extended xv6 with a few new system calls:
+    - mmap() - allows user to map memory of a selected file
+    - msync() - allows user to write a file changed by mmap() to disk
+    - shm_open() - allows user to create shared memory file (file shared between processes)
+    - shm_unlink() - allows user to delete shared memory file
+    - ftruncate() - allows user to set length of a selected file
+    - shm_stat() - allows user to see how many different processes wrote into a shared memory file
+
+
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
 but is implemented for a modern x86-based multiprocessor using ANSI C.
